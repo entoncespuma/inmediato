@@ -1,0 +1,50 @@
+header {
+    nav {
+        width: 100%; // Hace que la barra de navegación ocupe todo el ancho de la página
+        padding: 0.5em; // Agrega un espacio interior
+        background-color: grey; // Establece un fondo gris
+        display: flex; // Usa flexbox para organizar la navegación
+        justify-content: center; // Centra el contenido horizontalmente
+
+
+        // Estilos para el logo dentro de la navegación
+        img {
+            width: 3em; // Define el ancho del logo
+            height: auto; // Mantiene las proporciones del logo
+            margin-bottom: 0.5em; // Espacio inferior del logo
+        }
+
+        // Estilos para la lista de enlaces de navegación
+        ul {
+            display: flex; // Organiza los enlaces en fila
+            align-items: center; // Centra verticalmente los enlaces
+            margin: 0; // Elimina márgenes predeterminados
+            padding: 0; // Elimina padding predeterminado
+            list-style: none; // Elimina los marcadores de la lista
+
+            // Estilos para cada elemento de la lista
+            li {
+                list-style: none; // Asegura que no haya marcadores
+
+                // Estilos para los enlaces de navegación
+                a {
+                    text-decoration: none; // Elimina el subrayado de los enlaces
+                    padding: 0.5em; // Agrega espacio interior al enlace
+                    margin: 0.5em; // Espacio entre enlaces
+                    color: white; // Establece el color del texto
+                    font-weight: 600; // Aplica negrita al texto
+                    transition: 0.5s; // Transición suave al hacer hover
+
+                    // Estilos al hacer hover en los enlaces
+                    &:hover {
+                        color: black; // Cambia el color del texto al hacer hover
+                        background-color: white; // Cambia el fondo del enlace al hacer hover
+                        border-radius: 9px 4px 9px 4px; // Bordes redondeados al hacer hover
+                        font-size: smaller; // Reduce el tamaño del texto al hacer hover
+                        text-decoration: none; // Mantiene el texto sin subrayado
+                    }
+                }
+            }
+        }
+    }
+}
